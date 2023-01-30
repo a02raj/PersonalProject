@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="56.699">
+    <testcase classname="Form features" name="Workspace forms feature" time="56.52">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given user is on home page..................................................passed
+And get the heading and print...............................................passed
+And user click on workspace link............................................passed
+And get the heading and print...............................................passed
+Given select the forms title element click all in one.......................passed
+Then enter first name.......................................................passed
+And enter last name.........................................................passed
+And enter email.............................................................passed
+And select country code india from dropdown.................................passed
+And enter phone number......................................................passed
+And enter address line-1....................................................passed
+And enter address line-2....................................................passed
+And enter state.............................................................passed
+And enter postal-code.......................................................passed
+And select country india from dropdown......................................passed
+And select date of birth 2-2-1995 from datepicker...........................passed
+And Select gender male radio button.........................................failed
+Then agree the T&C by clicking on checkbox..................................skipped
+And click on sbmit button to submit the form................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at java.base/java.lang.String.contains(String.java:2036)
+	at pageFactory.FormFactory.gender(FormFactory.java:87)
+	at stepDefenations.Form.select_gender_male_radio_button(Form.java:63)
+	at ✽.Select gender male radio button(file:///C:/Users/aryraj/Desktop/java/litcode/src/test/resources/features/FormMultiSelect.feature:25)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
